@@ -1,7 +1,6 @@
 package br.com.mariojp.figureeditor;
 
 import java.awt.Shape;
-import java.awt.geom.Rectangle2D;
 import java.awt.geom.Ellipse2D;
 
 public class EllipseFactory {
