@@ -26,7 +26,8 @@ class DrawingPanel extends JPanel {
         var mouse = new MouseAdapter() {
             @Override public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 1 && startDrag == null) {
-                    shapes.add(Factory.getShape(e.getX(), e.getY(), 2));
+                    ShapeFactory shapeFactory = new ShapeFactory();
+                    shapes.add(shapeFactory.getShape(e.getX(), e.getY(), 1));
                     repaint();
                 }
             }
